@@ -1,0 +1,1 @@
+For r in the range 3.2-5, from the graph, we can see that the value of Xn keeps oscillating between two values until r reaches value around 3.4. From 3.4 to around 3.6, Xn starts to oscillate between 4 values. From 3.6 to 4, Xn starts to oscillate between multiple values.

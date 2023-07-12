@@ -1,0 +1,21 @@
+The three solutions are 3.72713 and 1.28042(symmetric solutions) and 2.53809 (anti-symmetric solution).
+It takes less iterations for Newton's method to compute the roots. Therefore, the Newton's method converge much faster. However, Bisection method does not need to calculate the complicated derivative of the functions.
+Two methods have its pros and cons.
+For initial v0:
+u0^2=20
+u0=sqrt(20)
+u0=aL/2
+a=sqrt(2m(v0-E))/hbar
+sqrt(2m(v0-E))/hbar=2*sqrt(20)/100nm
+v0=1.036*10^12eV.
+
+For 3 eigenenergies:
+At v=3.727,
+v=kL/2
+k=sqrt(2mE)/hbar
+2v/L=sqrt(2mE)/hbar
+E=7.192*10^11eV.
+At v=1.280,
+E=8.483*10%10eV.
+At v=2.538,
+E=3.333*10^11eV.

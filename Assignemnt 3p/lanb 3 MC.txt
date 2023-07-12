@@ -1,0 +1,1 @@
+As N increases, the standard deviation is reduced. For example, the Std Dev for N=100 is 0.1601, for N=1000 Std Dev=0.05, and for N=10000 Std Dev=0.016. The behavior of Std Dev/pi approaches to 0 as N increase. My prediction for Std Dev when N=100000 is 0.005 because every time N is increased by a factor of 10 and Std Dev is approximately decreased by a factor of 3.

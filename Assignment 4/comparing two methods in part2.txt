@@ -1,0 +1,2 @@
+For Newton's method, it takes 4 iterations to reach the precision of 10^-8. For Bisection Methods, it takes 23 iterations to reach the precision of 10^-8.
+In this case, Newton's method converges much faster than Bisection Method does.

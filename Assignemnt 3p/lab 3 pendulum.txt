@@ -1,0 +1,7 @@
+From my program I got:
+Integration of Pendulum problem at theta=0.1 equals 6.27585
+Integration of Pendulum problem at theta=pi/6 equals 6.38105
+Integration of Pendulum problem at theta=pi/4 equals 6.52248
+Integration of Pendulum problem at theta=pi/3 equals 6.73062
+For small angle approximation, T=2pi*sqrt(l/g). We assume that l/g=1. Thus, T should equal to 2pi=6.28318. In my program, we can see that for smallest angle 0.1 we have the closest value 6.27585 for T.
+If we increase the amplitude of the pendulum, we can expect that T will also increase. From my physics knowledge, the bigger amplitude the pendulum has, the more potential energy it stores. Therefore, more potential energy will convert into kinetic energy. The pendulum will travel in longer distance. As a result, it will take more time to finish one period of motion. In the program, as theta increases from 0.1 to pi/3, T increases from 6.27 to 6.73.
