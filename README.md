@@ -10,7 +10,7 @@ The ROOT part is used to visualize and make animations. (You can try Python to d
 
 ## Installation
 
-I recommend installing ROOT environment via Homebrew,
+I recommend installing ROOT environment via Homebrew.
 
 ### Prerequisites
 
