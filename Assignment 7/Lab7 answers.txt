@@ -1,0 +1,1 @@
+First of all, the fixed v0 value is 30 m/s in my case. After running the program, the required angle theta value for maximum range is 0.45978 (radian) which is 26.34 in degrees. This angle is smaller than 45 degrees.

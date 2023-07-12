@@ -1,0 +1,65 @@
+//
+//  main.cpp
+//  errors
+//
+//  Created by QGY on 10/27/20.
+//
+
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+double integrand(double aX)//This is the function that we need calculate the integral of
+{
+    return sin(aX);
+}
+
+double trapezoidal(double leftL, double rightL, int n, double integrand(double))//This defines trapazodial rule to calculate the integral
+{
+    double x,dx,sum,result;
+    x=leftL;
+    dx=(rightL-leftL)/n;
+    sum=0;
+    result=0;
+    for(int i=1;i<n;i++)
+    {
+        sum+=2*integrand(x+i*dx);
+    }
+    result=0.5*(sum+integrand(x)+integrand(x+n*dx))*dx;
+    return result;
+}
+
+double simpsons(double leftL, double rightL, int n, double integrand(double))//This defines simpsons rule to calculate the integral
+{
+    double x,dx,sum1,sum2,result;
+    x=leftL;
+    dx=(rightL-leftL)/n;
+    sum1=0;
+    sum2=0;
+    result=0;
+    for(int i=1;i<n;i=i+2)//choose to use n/2 and 2i to avoid overlaps.
+    {
+        sum1+=4*integrand(x+i*dx);
+    }
+    for(int j=0;j<n;j=j+2)
+    {
+        sum2+=2*integrand(x+j*dx);
+    }
+    result=dx*(sum1+sum2-integrand(x)+integrand(x+n*dx))/3.0;
+    return result;
+}
+
+int main()
+{
+    double lower,upper,result1,result2;
+    int interval;
+    cout<<"Enter lower and upper limit: "<<endl;//ask for limits
+    cin>>lower>>upper;
+    cout<<"Enter number of intervals: "<<endl;
+    cin>>interval;
+    result1=trapezoidal(lower,upper,interval,integrand);//calculate it using trapezoidal
+    result2=simpsons(lower,upper,interval,integrand);//calculate it using simpsons
+    cout<<"Integration using Trapezoidal equals "<<result1<<endl;
+    cout<<"Integration using Simpsons equals "<<result2<<endl;
+    return 0;
+}
