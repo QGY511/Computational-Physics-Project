@@ -1,0 +1,8 @@
+ There are three conditions need to be considered in designing a bungee cord.
+1.The lowest of the motion can not exceed h=-134, otherwise the jumper will hit the ground. In my design, the Lowest point is -123 which does nor exceed h. 
+2.The maximum elastic force on the jumper does not exceed 3mg because large elastic force may hurt the jumper. In my design, the maximum elastic force is 2196<3*78*9.81=2295.5.
+3.It is typically required that the cord stretches by less than 300% because over-stretching a bungee cord may break the bungee cord irreversibly. In my design, the maximum stretch is just 120% which is less than 300%. 
+
+Values for parameters:
+a=0.015^2*pi=7.069*10^-4.
+l=56.
